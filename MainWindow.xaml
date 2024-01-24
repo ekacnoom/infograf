@@ -17,8 +17,6 @@
             <InlineUIContainer Name="HyperlinkContainer"/>
         </TextBlock>
 
-
-        <!-- Кнопки розташовані поза Canvas барів -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
             <Button x:Name="BackButton" Content="Назад" Width="100" Height="30" Opacity="0" Click="BackButton_Click"/>
             <Button x:Name="ForwardButton" Content="Вперед" Width="100" Height="30" Opacity="0" Click="ForwardButton_Click"/>
