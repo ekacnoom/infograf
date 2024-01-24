@@ -5,11 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:infograf"
         mc:Ignorable="d"
-        Title="Інфографіка" Height="450" Width="800">
+        Title="Державні видатки у розрізі економічних категорій" Height="450" Width="800">
     <Grid>
         <Canvas x:Name="MyCanvas" Grid.Row="1">
-            <!-- Бари додадуться динамічно тут -->
+
         </Canvas>
+
+        <TextBlock Name="InfoTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top"
+           Foreground="Black" FontSize="12"
+           Margin="500,70,0,0" TextWrapping="Wrap">
+            <InlineUIContainer Name="HyperlinkContainer"/>
+        </TextBlock>
+
 
         <!-- Кнопки розташовані поза Canvas барів -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
