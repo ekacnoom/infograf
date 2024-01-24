@@ -214,7 +214,7 @@ namespace infograf
                 };
 
                 Canvas.SetLeft(yearLabel, x + 20);
-                Canvas.SetTop(yearLabel, 380); // Можна налаштувати відповідно до вашого дизайну
+                Canvas.SetTop(yearLabel, 380);
                 MyCanvas.Children.Add(yearLabel);
             }
 
@@ -228,7 +228,7 @@ namespace infograf
             if (height <= 70)
             {
                 // Інтерполяція між зеленим і жовтим кольорами
-                double percentage = height / 70.0; // Відсоток до 70
+                double percentage = height / 70.0;
                 byte green = (byte)(255 * (1 - percentage));
                 byte red = (byte)(255 * percentage);
                 return Color.FromRgb(red, 255, green);
@@ -236,7 +236,7 @@ namespace infograf
             else
             {
                 // Інтерполяція між жовтим і червоним кольорами
-                double percentage = (height - 70) / 30.0; // Відсоток після 70
+                double percentage = (height - 70) / 30.0;
                 byte green = (byte)(255 * (1 - percentage));
                 return Color.FromRgb(255, green, 0);
             }
@@ -261,7 +261,7 @@ namespace infograf
             {
                 currentCase = 1;
             }
-            else if (currentCase < 4) // Тепер максимальне значення - 4
+            else if (currentCase < 4)
             {
                 currentCase++;
             }
@@ -279,9 +279,9 @@ namespace infograf
             // Створюємо гіперпосилання
             Hyperlink sourceLink = new Hyperlink(new Run($"Джерело даних: {source}"))
             {
-                NavigateUri = new Uri(source) // Припускаючи, що 'source' це валідний URL
+                NavigateUri = new Uri(source)
             };
-            // Використовуємо новий обробник подій
+            // Використовуємо обробник подій
             sourceLink.RequestNavigate += Hyperlink_RequestNavigate;
 
             // Додаємо гіперпосилання до TextBlock
