@@ -66,7 +66,7 @@ namespace infograf
         {
             if (!isChartInitialized)
             {
-                // Ініціалізація барів тут
+                // Ініціалізація барів
                 isChartInitialized = true;
             }
             UpdateBars();
@@ -170,7 +170,7 @@ namespace infograf
             };
 
             Canvas.SetLeft(percentageText, x + width / 2);
-            Canvas.SetTop(percentageText, startY - 20); // Розташування тексту над баром
+            Canvas.SetTop(percentageText, startY - 20); // Розташування тексту
 
             MyCanvas.Children.Add(percentageText);
 
